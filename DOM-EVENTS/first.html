@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Heeloo My blog</h1>
+      <article class="box">
+        <h3>blog-1</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat
+          expedita repellat? Maiores vitae voluptas, optio porro animi quidem
+          blanditiis, iusto fugiat dolorum culpa numquam soluta unde ipsum.
+          Amet, iusto.
+        </p>
+      </article>
+      <article class="box">
+        <h3>blog-2</h3>
+        <p>
+          Aut dolorem sit eos architecto incidunt quibusdam distinctio, tempore
+          in ab blanditiis fugit nemo provident qui. Nisi expedita repellendus,
+          non voluptatum inventore ipsa corrupti commodi laudantium assumenda
+          error, ullam delectus.
+        </p>
+      </article>
+      <article class="box">
+        <h3 id="ko">blog-3</h3>
+        <p>
+          Laborum mollitia totam dolorem sunt rerum iure, quas nostrum
+          aspernatur sequi laboriosam veritatis dolor nesciunt autem incidunt
+          maiores, enim explicabo molestiae eos quos quidem placeat! Repellendus
+          molestiae dolore sit assumenda?
+        </p>
+      </article>
+    </main>
+    <script>
+      document.getElementById("ko").style.color = "red";
+      document.getElementById("ko").style.backgroundColor = "orange";
+
+      // explore getElementsByClassName
+      const blogs = document.getElementsByClassName("box");
+      for (const blog of blogs) {
+        blog.style.border = "2px solid orange";
+        blog.style.borderRadius = "10px";
+        blog.style.margin = "5px";
+        blog.style.padding = "5px";
+      }
+    </script>
+  </body>
+</html>
